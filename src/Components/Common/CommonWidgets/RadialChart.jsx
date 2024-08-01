@@ -17,7 +17,7 @@ const RadialChart = ({ chartData }) => {
       colors: chartData.color,
     },
   };
-  return <ReactApexChart type='radialBar' height={130} options={updatedOption.options} series={updatedOption.series} />;
+  // return <ReactApexChart type='radialBar' height={130} options={updatedOption.options} series={updatedOption.series} />;
 };
 
 export default RadialChart;

@@ -1498,10 +1498,9 @@
                 position: relative;
 
                 &.sidebar-main-title {
-                  padding: 25px 0 6px 20px;
                   margin-top: 10px;
                   [dir="rtl"] & {
-                    padding: 25px 20px 6px 0;
+                    padding: 0px 20px 6px 0;
                   }
                   &::before {
                     position: absolute;

@@ -58,7 +58,7 @@ const SidebarMenuItems = ({ setMainMenu, sidebartoogle, setNavActive, activeClas
               <h6 className="lan-1">{t(Item.menutitle)}</h6>
             </div>
           </li>
-          {Item.Items.map((menuItem, i) => (
+          {Item?.Items?.map((menuItem, i) => (
             <li className="sidebar-list" key={i}>
               {menuItem.type === "sub" ? (
                 <a

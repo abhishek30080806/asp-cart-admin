@@ -38717,7 +38717,7 @@ ul.dot-group li {
   position: relative;
 }
 .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links > li.sidebar-main-title {
-  padding: 25px 0 6px 20px;
+  padding: 0px 0 6px 20px;
   margin-top: 10px;
 }
 [dir="rtl"] .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links > li.sidebar-main-title {

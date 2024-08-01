@@ -2,7 +2,6 @@ import React from "react";
 import { Suspense, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Loader from "../Layout/Loader";
-import { authRoutes } from "./AuthRoutes";
 import LayoutRoutes from "../Route/LayoutRoutes";
 import Signin from "../Auth/Signin";
 import PrivateRoute from "./PrivateRoute";
@@ -43,9 +42,6 @@ const Routers = () => {
           </Route>
 
           <Route exact path={`${process.env.PUBLIC_URL}/login`} element={<Signin />} />
-          {authRoutes.map(({ path, Component }, i) => (
-            <Route path={path} element={Component} key={i} />
-          ))}
         </Routes>
       </Suspense>
     </BrowserRouter>
