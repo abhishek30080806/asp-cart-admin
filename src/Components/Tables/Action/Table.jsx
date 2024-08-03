@@ -4,16 +4,16 @@ import StatusBtn from './StatusBtn';
 import ActionBtn from './ActionBtn';
 import { categories, subCategory } from '../../../Route/RouteVariable';
 
-const ActionTable = ({ tableData, tableHeading, currentUrl,changeStatus }) => {
+const ActionTable = ({ tableData, tableHeading, currentUrl, changeStatus ,handleEditModal}) => {
     const getTableBody = (item) => {
         if (currentUrl === categories)
             return (
                 <tr key={item.id}>
                     <td>{item.title}</td>
-                    <td><StatusBtn status={item?.feature} currentUrl={currentUrl} isFeature/></td>
-                    <td><StatusBtn  status={item?.status} currentUrl={currentUrl}/></td>
+                    <td><StatusBtn status={item?.feature} currentUrl={currentUrl} isFeature /></td>
+                    <td><StatusBtn status={item?.status} currentUrl={currentUrl} /></td>
                     <td>
-                        <ActionBtn changeStatus={changeStatus} item={item} />
+                        <ActionBtn handleEditModal={handleEditModal} changeStatus={changeStatus} item={item} />
                     </td>
                 </tr>
             )
@@ -22,8 +22,8 @@ const ActionTable = ({ tableData, tableHeading, currentUrl,changeStatus }) => {
                 <tr key={item?.id}>
                     <td>{item?.title}</td>
                     <td>{item?.categoryName}</td>
-                    <td><StatusBtn  currentUrl={currentUrl} status={item?.status} /></td>
-                    <td><ActionBtn changeStatus={changeStatus}  item={item} /></td>
+                    <td><StatusBtn currentUrl={currentUrl} status={item?.status} /></td>
+                    <td><ActionBtn handleEditModal={handleEditModal} changeStatus={changeStatus} item={item} /></td>
                 </tr>
             )
         }
@@ -32,7 +32,7 @@ const ActionTable = ({ tableData, tableHeading, currentUrl,changeStatus }) => {
                 <tr key={item.id}>
                     <td>{item.title}</td>
                     <td><StatusBtn status={item?.status} /></td>
-                    <td><ActionBtn changeStatus={changeStatus} item={item} /></td>
+                    <td><ActionBtn handleEditModal={handleEditModal} changeStatus={changeStatus} item={item} /></td>
                 </tr>
             )
         }
