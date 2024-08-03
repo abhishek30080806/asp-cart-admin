@@ -1,0 +1,48 @@
+.edit-btn,.edit-btn:hover ,.edit-btn:active {
+    background-color: white !important;
+    padding: 6px !important;
+    border-color: blue !important;
+    color: blue !important;
+}
+
+.feature-btn-deactive,.feature-btn-deactive:hover,.feature-btn-deactive:active {
+    background-color: white !important;
+    padding: 6px !important;
+    color: red !important;
+    width: 120px;
+
+}
+.feature-btn-active,.feature-btn-active:hover,.feature-btn-active:active{
+    background-color: white !important;
+    padding: 6px !important;
+    border-color: green !important;
+    color: green !important;
+    width: 120px;
+
+}
+.status-btn-active,.status-btn-active:hover,.status-btn-active:active{
+    background-color: white !important;
+    padding: 6px !important;
+    border-color: green !important;
+    color: green !important;
+    width: 80px;
+    border-radius: 20px !important;
+    cursor: default;
+}
+.status-btn-deactive,.status-btn-deactive:hover,.status-btn-deactive:active{
+    background-color: white !important;
+    padding: 6px !important;
+    color: red !important;
+    width: 80px;
+    border-radius: 20px !important;
+    cursor: default;
+
+}
+.action-add-btn,.action-add-btn:hover ,.action-add-btn:active {
+    background-color: white !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    border-color: green !important;
+    color: green !important;
+    width: 80px;
+}

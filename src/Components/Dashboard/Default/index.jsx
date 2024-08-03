@@ -16,9 +16,9 @@ import PaperNote from "./PaperNote";
 const Dashboard = () => {
   return (
     <Fragment>
-      <Breadcrumbs mainTitle="Default" parent="Dashboard" title="Default" />
+      <Breadcrumbs mainTitle="Dashboard"  title="Dashboard" />
       <Container fluid={true}>
-        <Row className="widget-grid">
+        <Row className="widget-grid mt-5">
           <GreetingCard />
           <WidgetsWrapper />
           <OverallBalance />

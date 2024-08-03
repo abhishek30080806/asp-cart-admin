@@ -1572,3 +1572,18 @@ export const Bookmark = "Bookmark";
 export const AddNewBookmark = "Add New Bookmark";
 export const Back = "Back";
 export const DatatableOrderhistory = "Datatable Order history";
+
+
+// ---------------------------------------------------------
+
+export const name='Name';
+export const status='Status';
+export const fetature='Featured';
+export const action='Action';
+export const edit='Edit'
+export const features='Feature';
+export const unFeature='Unfeature';
+export const yes='Yes';
+export const no='No';
+export const category='Category';
+export const deactive='Deactive';
